@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpdev/example-dynamic-block",
+	"version": "0.1.0",
+	"title": "Example Dynamic Block",
+	"category": "widgets",
+	"icon": "admin-users",
+	"description": "Example dynamic block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"role": {
+			"type": "string",
+			"default": "author"
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"align": ["wide", "full"],
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	},
+	"textdomain": "example-dynamic-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
